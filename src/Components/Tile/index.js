@@ -3,7 +3,7 @@ import "./style.css";
 
 const Tile = () => {
     return (
-        <div className="Tile">
+        <div className="tile">
 
         </div>
     );
