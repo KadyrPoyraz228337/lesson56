@@ -6,6 +6,8 @@ class App extends Component {
         items: []
     };
 
+    createRamdomNumber = max => Math.floor(Math.random() * max +1);
+
     render() {
         return (
             <div>
