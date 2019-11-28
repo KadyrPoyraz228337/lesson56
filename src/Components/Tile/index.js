@@ -1,10 +1,12 @@
 import React from 'react';
 import "./style.css";
 
-const Tile = () => {
+const Tile = props => {
+    const tileClass = `tileUp ${props.isClick && 'isClick'}`;
     return (
-        <div className="tile">
-
+        <div onClick={props.onClick} className="tile">
+            <div className={tileClass}/>
+            <div>{props.state && '0'}</div>
         </div>
     );
 };
